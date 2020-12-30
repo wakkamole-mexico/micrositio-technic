@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MTNGKTZ');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Juguetron - Technic</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Blinker">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <style>
+      @keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-10000px 5000px;}
+      }
+      @-webkit-keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-10000px 5000px;}
+      }
+      @-moz-keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-10000px 5000px;}
+      }
+      @-ms-keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-10000px 5000px;}
+      }
+      .estrellas {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        width:100%;
+        height:100%;
+        display:block;
+      }
+
+      body{
+        background: #0855A6;
+        /*background: -webkit-linear-gradient(top, #0855A6, #666);
+        background: -moz-linear-gradient(top, #0855A6, #666);
+        background: -o-linear-gradient(top, #0855A6, #666);
+        background: -ms-linear-gradient(top, #0855A6, #666);*/
+
+      }
+
+      .estrellas{
+        background:transparent url(/sitio/img/estrellas.png) repeat top center;
+        z-index:-2;
+
+        -moz-animation:move-twink-back 150s linear infinite;
+        -ms-animation:move-twink-back 150s linear infinite;
+        -o-animation:move-twink-back 150s linear infinite;
+        -webkit-animation:move-twink-back 150s linear infinite;
+        animation:move-twink-back 150s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTNGKTZ"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <div class="estrellas"></div>
+  </body>
+</html>
